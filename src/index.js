@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 import Life from './pages/demo/Life';
+// import 'antd/dist/antd.less'; 
+
 
 ReactDOM.render(<Life/>, document.getElementById('root'));
 

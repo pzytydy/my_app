@@ -1,6 +1,9 @@
 import React from 'react';
-import './Child'
+import './Child';
 import Child from './Child';
+// import 'antd/dist/antd.less'; 
+
+import { Button } from 'antd';
 
 export default class Life extends React.Component{
     constructor(props){
@@ -32,6 +35,7 @@ export default class Life extends React.Component{
     render(){
         return <div style={{padding:'100px'}}>
             <p>生命周期</p>
+            <Button onClick={this.handleAdd}>点我一哈</Button>
             <button onClick={this.handleAddClick.bind(this)}>点我呀</button>
             <button onClick={this.handleAdd}>点我</button>
             <p>{this.state.count}sss</p>
